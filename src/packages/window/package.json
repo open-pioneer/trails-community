@@ -1,0 +1,20 @@
+{
+    "name": "window",
+    "version": "0.1.0",
+    "main": "index.ts",
+    "private": true,
+    "homepage": "https://github.com/open-pioneer",
+    "keywords": [
+        "open-pioneer-trails"
+    ],
+    "scripts": {
+        "build": "build-pioneer-package"
+    },
+    "dependencies": {
+        "@open-pioneer/runtime": "catalog:",
+        "@chakra-ui/react": "catalog:",
+        "react": "catalog:",
+        "react-rnd": "catalog:",
+        "react-icons": "catalog:"
+    }
+}

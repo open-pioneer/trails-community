@@ -1,6 +1,7 @@
-// SPDX-FileCopyrightText: 2023 Open Pioneer project (https://github.com/open-pioneer)
+// SPDX-FileCopyrightText: 2023-2025 Open Pioneer project (https://github.com/open-pioneer)
 // SPDX-License-Identifier: Apache-2.0
-import { Box, Flex } from "@open-pioneer/chakra-integration";
+
+import { Box, Flex } from "@chakra-ui/react";
 import { Rnd, type ResizeEnable } from "react-rnd";
 import { useMemo, type ReactElement, type ReactNode } from "react";
 

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Open Pioneer project (https://github.com/open-pioneer)
+// SPDX-FileCopyrightText: 2023-2025 Open Pioneer project (https://github.com/open-pioneer)
 // SPDX-License-Identifier: Apache-2.0
-import { Box, Flex, IconButton, Text } from "@chakra-ui/react";
+import { Box, Flex, Icon, IconButton, Text } from "@chakra-ui/react";
 import { useIntl } from "open-pioneer:react-hooks";
 import { MdClose } from "react-icons/md";
 import { useCallback, useMemo, type MouseEventHandler, type ReactElement } from "react";
@@ -29,7 +29,6 @@ export function TitleBar({ title, closeable, onClose }: TitleBarProps): ReactEle
                 </Text>
                 {closeable && (
                     <IconButton
-                        icon={<MdClose />}
                         size="sm"
                         variant="ghost"
                         color="white"
@@ -38,7 +37,11 @@ export function TitleBar({ title, closeable, onClose }: TitleBarProps): ReactEle
                         _hover={STYLES.hoveredCloseButton}
                         _active={STYLES.activeCloseButton}
                         onClick={onClose}
-                    />
+                    >
+                        <Icon>
+                            <MdClose />
+                        </Icon>
+                    </IconButton>
                 )}
             </Flex>
         </Box>
