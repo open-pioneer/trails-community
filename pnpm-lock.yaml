@@ -341,18 +341,6 @@ importers:
         specifier: 'catalog:'
         version: 3.2.2(@types/node@20.19.0)(happy-dom@17.6.3)(jsdom@26.1.0)(sass@1.89.1)(tsx@4.19.4)(yaml@2.8.0)
 
-  src/apps/empty:
-    dependencies:
-      '@chakra-ui/react':
-        specifier: 'catalog:'
-        version: 3.21.0(@emotion/react@11.14.0(@types/react@19.1.6)(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@open-pioneer/runtime':
-        specifier: 'catalog:'
-        version: 4.0.0(@types/react@19.1.6)(typescript@5.8.3)
-      sample-package:
-        specifier: workspace:^
-        version: link:../../packages/sample-package
-
   src/packages/sample-package:
     dependencies:
       '@open-pioneer/runtime':

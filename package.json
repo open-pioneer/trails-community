@@ -1,5 +1,5 @@
 {
-    "name": "starter",
+    "name": "trails-community",
     "private": true,
     "type": "module",
     "license": "Apache-2.0",
@@ -10,9 +10,8 @@
         "watch-types": "pnpm check-types -w",
         "check-duplicates": "pnpm check-pnpm-duplicates -c support/duplicate-packages.yaml",
         "build": "vite build",
+        "build-packages": "pnpm run -r --aggregate-output build",
         "build-docs": "typedoc",
-        "build-license-report": "tsx ./support/create-license-report.ts",
-        "generate-sbom": "tsx ./support/create-cyclonedx-sbom.ts",
         "preview": "vite preview",
         "lint": "eslint ./src ./support --ext .js,.ts,.jsx,.tsx,.mjs,.mts,.cjs,.cts",
         "eslint": "pnpm run lint",

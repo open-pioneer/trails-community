@@ -1,9 +1,0 @@
-{
-    "name": "empty",
-    "private": true,
-    "dependencies": {
-        "@chakra-ui/react": "catalog:",
-        "@open-pioneer/runtime": "catalog:",
-        "sample-package": "workspace:^"
-    }
-}

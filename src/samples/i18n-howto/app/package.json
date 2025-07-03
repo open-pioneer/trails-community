@@ -1,8 +1,0 @@
-{
-    "name": "i18n-howto-app",
-    "private": true,
-    "dependencies": {
-        "@chakra-ui/react": "catalog:",
-        "@open-pioneer/runtime": "catalog:"
-    }
-}
