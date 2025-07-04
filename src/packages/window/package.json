@@ -3,6 +3,11 @@
     "version": "0.1.0",
     "main": "index.ts",
     "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/open-pioneer/trails-community",
+        "directory": "src/packages/window"
+    },
     "homepage": "https://github.com/open-pioneer",
     "keywords": [
         "open-pioneer-trails"
@@ -16,5 +21,9 @@
         "react": "catalog:",
         "react-rnd": "catalog:",
         "react-icons": "catalog:"
+    },
+    "publishConfig": {
+        "directory": "dist",
+        "linkDirectory": false
     }
 }

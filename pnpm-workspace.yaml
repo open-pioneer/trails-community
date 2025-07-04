@@ -24,6 +24,7 @@ catalog:
   "@open-pioneer/overview-map": *ol_base_packages_version
   "@open-pioneer/scale-bar": *ol_base_packages_version
   "@open-pioneer/scale-viewer": *ol_base_packages_version
+  "@open-pioneer/toc": *ol_base_packages_version
 
   # Trails core packages
   # https://github.com/open-pioneer/trails-core-packages
@@ -122,6 +123,7 @@ overrides:
   # https://github.com/advisories/GHSA-v6h2-p8h4-qcjw
   "brace-expansion@>=1.0.0 <=1.1.11": "^1.1.12"
   "brace-expansion@>=2.0.0 <=2.0.1": "^2.0.2"
+  # react-rnd uses outdated version of tslib
   "tslib@>=2.0.0": "^2.8.1"
 
 auditConfig:

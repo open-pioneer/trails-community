@@ -1,0 +1,18 @@
+{
+    "name": "window-app",
+    "private": true,
+    "dependencies": {
+        "@chakra-ui/react": "catalog:",
+        "@open-pioneer/map": "catalog:",
+        "@open-pioneer/toc": "catalog:",
+        "@open-pioneer/scale-bar": "catalog:",
+        "@open-pioneer/scale-viewer": "catalog:",
+        "@open-pioneer/coordinate-viewer": "catalog:",
+        "@open-pioneer/map-ui-components": "catalog:",
+        "ol": "catalog:",
+        "react": "catalog:",
+        "react-icons": "catalog:",
+        "window": "workspace:^"
+    },
+    "version": "0.0.1"
+}

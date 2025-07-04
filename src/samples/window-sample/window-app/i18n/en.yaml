@@ -1,0 +1,6 @@
+messages:
+  toc:
+    title: "Table of Contents"
+  window:
+    title: "A window"
+    content: "I am draggable, resizable and closable!"

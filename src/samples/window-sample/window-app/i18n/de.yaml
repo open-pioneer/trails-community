@@ -1,0 +1,6 @@
+messages:
+  toc:
+    title: "Karteninhalt"
+  window:
+    title: "Ein Fenster"
+    content: "Mich kann man verschieben, vergrößern und schließen!"

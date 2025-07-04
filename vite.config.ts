@@ -14,7 +14,7 @@ import eslint from "vite-plugin-eslint";
 // - https://esbuild.github.io/api/#target
 const targets = ["chrome92", "edge92", "firefox91", "safari14"];
 
-const sampleSites: string[] = [];
+const sampleSites: string[] = ["samples/window-sample"];
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
