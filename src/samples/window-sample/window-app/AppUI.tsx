@@ -11,7 +11,7 @@ import { MAP_ID } from "./MainMapProvider";
 import { Window } from "window";
 import { useState } from "react";
 import { ToolButton } from "@open-pioneer/map-ui-components";
-import { PiListLight } from "react-icons/pi";
+import { LuAlignJustify } from "react-icons/lu";
 import { useIntl } from "open-pioneer:react-hooks";
 
 export function AppUI() {
@@ -60,7 +60,7 @@ export function AppUI() {
                             <MapAnchor position="bottom-right" horizontalGap={10} verticalGap={45}>
                                 <ToolButton
                                     label="test"
-                                    icon={<PiListLight />}
+                                    icon={<LuAlignJustify />}
                                     active={!windowClosed}
                                     onClick={() => setWindowClosed(!windowClosed)}
                                 />

@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 import { Box, Flex, Icon, IconButton, Text } from "@chakra-ui/react";
 import { useIntl } from "open-pioneer:react-hooks";
-import { MdClose } from "react-icons/md";
+import { LuX } from "react-icons/lu";
 import { useCallback, useMemo, type MouseEventHandler, type ReactElement } from "react";
 
 export function TitleBar({ title, closeable, onClose }: TitleBarProps): ReactElement {
@@ -39,7 +39,7 @@ export function TitleBar({ title, closeable, onClose }: TitleBarProps): ReactEle
                         onClick={onClose}
                     >
                         <Icon>
-                            <MdClose />
+                            <LuX />
                         </Icon>
                     </IconButton>
                 )}
