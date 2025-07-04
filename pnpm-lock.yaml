@@ -159,6 +159,7 @@ overrides:
   '@babel/runtime': '>=7.26.10'
   brace-expansion@>=1.0.0 <=1.1.11: ^1.1.12
   brace-expansion@>=2.0.0 <=2.0.1: ^2.0.2
+  tslib@>=2.0.0: ^2.8.1
 
 patchedDependencies:
   '@ark-ui/react@*':
@@ -3369,9 +3370,6 @@ packages:
 
   tsconfig-paths@3.15.0:
     resolution: {integrity: sha512-2Ac2RgzDe/cn48GvOe3M+o82pEFewD3UPbyoUHHdKasHwJKjds4fLXWf/Ux5kATBKN20oaFGu+jbElp1pos0mg==}
-
-  tslib@2.6.2:
-    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
@@ -6899,7 +6897,7 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       react-draggable: 4.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   react@19.1.0: {}
 
@@ -7313,8 +7311,6 @@ snapshots:
       json5: 1.0.2
       minimist: 1.2.8
       strip-bom: 3.0.0
-
-  tslib@2.6.2: {}
 
   tslib@2.8.1: {}
 
