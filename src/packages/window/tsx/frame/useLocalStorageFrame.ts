@@ -3,22 +3,43 @@
 
 import { useMemo } from "react";
 import { isRndFrame, normalize, type RndFrame } from "./frame";
+import { useService } from "open-pioneer:react-hooks";
+import { LocalStorageService } from "@open-pioneer/local-storage";
 
 //ToDo use localStorage service
 export function useLocalStorageFrame(identifier: string | undefined): LocalStorageFrameState {
+    const storageService = useLocalStorageService();
+
     return useMemo(
-        () => [getFrame(identifier), (frame) => setFrame(identifier, frame)],
-        [identifier]
+        () => [
+            getFrame(identifier, storageService),
+            (frame) => setFrame(identifier, frame, storageService)
+        ],
+        [identifier, storageService]
     );
 }
 
-function getFrame(identifier: string | undefined): RndFrame | undefined {
+function useLocalStorageService() {
+    const localStorageService = useService<LocalStorageService>(
+        "local-storage.LocalStorageService"
+    );
+    return localStorageService;
+}
+
+function getFrame(
+    identifier: string | undefined,
+    storageService: LocalStorageService
+): RndFrame | undefined {
+    if (!storageService.isSupported) {
+        //local storage not supported, cannot get frame state
+        return undefined;
+    }
+
     try {
         if (identifier != null) {
             const key = getLocalStorageKey(identifier);
-            const item = localStorage.getItem(key);
-            if (item != null) {
-                const frame = JSON.parse(item);
+            const frame = storageService.get(key);
+            if (frame != null) {
                 if (isRndFrame(frame)) {
                     return normalize(frame);
                 }
@@ -30,12 +51,20 @@ function getFrame(identifier: string | undefined): RndFrame | undefined {
     }
 }
 
-function setFrame(identifier: string | undefined, frame: RndFrame): void {
+function setFrame(
+    identifier: string | undefined,
+    frame: RndFrame,
+    storageService: LocalStorageService
+): void {
+    if (!storageService.isSupported) {
+        //local storage not supported, do not safe frame state
+        return;
+    }
+
     try {
         if (identifier != null) {
             const key = getLocalStorageKey(identifier);
-            const item = JSON.stringify(frame);
-            localStorage.setItem(key, item);
+            storageService.set(key, frame);
         }
     } catch {
         /* ignore */

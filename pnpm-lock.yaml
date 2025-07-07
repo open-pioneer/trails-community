@@ -21,6 +21,9 @@ catalogs:
     '@open-pioneer/coordinate-viewer':
       specifier: ^0.11.0
       version: 0.11.0
+    '@open-pioneer/local-storage':
+      specifier: ^4.0.0
+      version: 4.0.0
     '@open-pioneer/map':
       specifier: ^0.11.0
       version: 0.11.0
@@ -323,6 +326,9 @@ importers:
       '@chakra-ui/react':
         specifier: 'catalog:'
         version: 3.21.0(@emotion/react@11.14.0(@types/react@19.1.6)(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@open-pioneer/local-storage':
+        specifier: 'catalog:'
+        version: 4.0.0(@types/react@19.1.6)(typescript@5.8.3)
       '@open-pioneer/runtime':
         specifier: 'catalog:'
         version: 4.0.0(@types/react@19.1.6)(typescript@5.8.3)
@@ -829,6 +835,9 @@ packages:
 
   '@open-pioneer/http@4.0.0':
     resolution: {integrity: sha512-5NKQvPB3AaF70XfwN1ucgp5PxAG396dXpjrUT7VWJi7Bxms9bb30hFN1/KqdeAmzUVk7+CQ1o6kX5de9st6b1g==}
+
+  '@open-pioneer/local-storage@4.0.0':
+    resolution: {integrity: sha512-0LulwiNx7tUdN4ueMj7FGfQC1Ss6F/ZFMi9MIOEVIPqEO5TnqGfpRBesJUweVQivdzTZ57LY3i4gEozFbAr8XA==}
 
   '@open-pioneer/map-ui-components@0.11.0':
     resolution: {integrity: sha512-YAbo8jRz5YPXLNodVkl3oTiplrXH/ErKYO9F3MdEtcJTc6cSkDGZVuWIQLpD/4Q3TlyGoL+hnVe6xQ7fpN45zw==}
@@ -4494,6 +4503,15 @@ snapshots:
   '@open-pioneer/core@4.0.0': {}
 
   '@open-pioneer/http@4.0.0(@types/react@19.1.6)(typescript@5.8.3)':
+    dependencies:
+      '@open-pioneer/core': 4.0.0
+      '@open-pioneer/runtime': 4.0.0(@types/react@19.1.6)(typescript@5.8.3)
+    transitivePeerDependencies:
+      - '@types/react'
+      - supports-color
+      - typescript
+
+  '@open-pioneer/local-storage@4.0.0(@types/react@19.1.6)(typescript@5.8.3)':
     dependencies:
       '@open-pioneer/core': 4.0.0
       '@open-pioneer/runtime': 4.0.0(@types/react@19.1.6)(typescript@5.8.3)

@@ -44,8 +44,8 @@ export function AppUI() {
                                 <Window
                                     title={intl.formatMessage({ id: "window.title" })}
                                     identifier="window"
-                                    top={10}
-                                    left={10}
+                                    top={500}
+                                    left={500}
                                     width={280}
                                     height={280}
                                     minWidth={250}

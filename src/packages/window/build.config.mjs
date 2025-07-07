@@ -8,5 +8,8 @@ export default defineBuildConfig({
     i18n: ["en", "de"],
     publishConfig: {
         strict: true
+    },
+    ui: {
+        references: ["local-storage.LocalStorageService"]
     }
 });

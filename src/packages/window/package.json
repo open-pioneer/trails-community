@@ -18,6 +18,7 @@
     },
     "dependencies": {
         "@open-pioneer/runtime": "catalog:",
+        "@open-pioneer/local-storage": "catalog:",
         "@chakra-ui/react": "catalog:",
         "react": "catalog:",
         "react-rnd": "catalog:",

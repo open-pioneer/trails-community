@@ -38,6 +38,7 @@ catalog:
   "@open-pioneer/reactivity": *core_packages_version
   "@open-pioneer/runtime": *core_packages_version
   "@open-pioneer/test-utils": *core_packages_version
+  "@open-pioneer/local-storage": *core_packages_version
 
   # Other dependencies
   "@chakra-ui/react": ^3.21.0
