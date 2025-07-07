@@ -8,7 +8,7 @@ import { ScaleBar } from "@open-pioneer/scale-bar";
 import { ScaleViewer } from "@open-pioneer/scale-viewer";
 import { Toc } from "@open-pioneer/toc";
 import { MAP_ID } from "./MainMapProvider";
-import { Window } from "window";
+import { Window } from "@open-pioneer-community/window";
 import { useState } from "react";
 import { ToolButton } from "@open-pioneer/map-ui-components";
 import { LuAlignJustify } from "react-icons/lu";
