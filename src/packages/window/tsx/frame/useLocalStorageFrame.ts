@@ -4,6 +4,7 @@
 import { useMemo } from "react";
 import { isRndFrame, normalize, type RndFrame } from "./frame";
 
+//ToDo use localStorage service
 export function useLocalStorageFrame(identifier: string | undefined): LocalStorageFrameState {
     return useMemo(
         () => [getFrame(identifier), (frame) => setFrame(identifier, frame)],
