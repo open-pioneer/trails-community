@@ -6,4 +6,4 @@ export {
     type AdditionalWindowProps,
     type WindowFrame,
     type WindowProps
-} from "./tsx/Window";
+} from "./ui/Window";
