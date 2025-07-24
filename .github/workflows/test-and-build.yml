@@ -88,4 +88,4 @@ jobs:
           git-config-name: "github-actions[bot]"
           git-config-email: "41898282+github-actions[bot]@users.noreply.github.com"
           folder: site
-          target-folder: starter
+          target-folder: community
