@@ -63,4 +63,3 @@ overrideLicenses:
     version: "1.0.6"
     licenseFiles:
       - custom: "./licenses/toggle_selection_mit"
-

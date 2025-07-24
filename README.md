@@ -1,8 +1,13 @@
-# Open Pioneer Trails Starter
+[![Build and deploy](https://github.com/open-pioneer/trails-community/actions/workflows/test-and-build.yml/badge.svg)](https://github.com/open-pioneer/trails-community/actions/workflows/test-and-build.yml) [![Audit dependencies (daily)](https://github.com/open-pioneer/trails-community/actions/workflows/audit-dependencies.yml/badge.svg)](https://github.com/open-pioneer/trails-community/actions/workflows/audit-dependencies.yml)
 
-[![Build and deploy](https://github.com/open-pioneer/trails-starter/actions/workflows/test-and-build.yml/badge.svg)](https://github.com/open-pioneer/trails-starter/actions/workflows/test-and-build.yml) [![Audit dependencies (daily)](https://github.com/open-pioneer/trails-starter/actions/workflows/audit-dependencies.yml/badge.svg)](https://github.com/open-pioneer/trails-starter/actions/workflows/audit-dependencies.yml)
+# Open Pioneer Trails - Community Packages
 
-[Samples](https://open-pioneer.github.io/trails-demo/starter/) | [API Documentation (for this Demo)](https://open-pioneer.github.io/trails-demo/starter/docs/) | [User manual](https://github.com/open-pioneer/trails-starter/tree/main/docs)
+This repository contains various Open Pioneer Trails packages developed and provided by the Trails community.
+
+Please note that theses packages are managed by the community and not officially part of the Open Pioneer Trails framework. Therefore, the levels of functionality, testing and maintenance can vary greatly for each individual package.  
+Please try to get in touch with the author of the package if you have any questions about its use or if you are considering making your own adjustments or extensions.
+
+[Samples](https://open-pioneer.github.io/trails-demo/community/) | [User manual](https://github.com/open-pioneer/trails-starter/tree/main/docs)
 
 See [See also](#see-also) for API docs of other trails packages.
 
@@ -26,6 +31,7 @@ Additional in-depth information can be found in the [Documentation](./docs/READM
 
 ## See also
 
+- [Trails Starter](https://github.com/open-pioneer/trails-starter): Project to get started with the Open Pioneer Trails web client framework; contains minimal samples.
 - [Core packages](https://github.com/open-pioneer/trails-core-packages): Contains the runtime package and other central packages.
 - [OpenLayers base packages](https://github.com/open-pioneer/trails-openlayers-base-packages): Contains packages using OpenLayers to render a map.
 - [Build tools](https://github.com/open-pioneer/trails-build-tools): Contains our build tooling such as the Vite plugin.
