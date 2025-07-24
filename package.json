@@ -1,5 +1,6 @@
 {
     "name": "trails-community",
+    "version": "0.0.1",
     "private": true,
     "type": "module",
     "license": "Apache-2.0",
@@ -23,6 +24,7 @@
         "prepare": "husky && pnpm check-duplicates"
     },
     "devDependencies": {
+        "@changesets/cli": "catalog:",
         "@open-pioneer/build-package-cli": "catalog:",
         "@open-pioneer/build-support": "catalog:",
         "@open-pioneer/check-pnpm-duplicates": "catalog:",

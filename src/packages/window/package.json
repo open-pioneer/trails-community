@@ -2,7 +2,6 @@
     "name": "@open-pioneer-community/window",
     "version": "0.1.0",
     "main": "index.ts",
-    "private": true,
     "license": "Apache-2.0",
     "repository": {
         "type": "git",
