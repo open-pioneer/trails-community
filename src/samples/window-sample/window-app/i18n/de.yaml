@@ -4,3 +4,5 @@ messages:
   window:
     title: "Ein Fenster"
     content: "Mich kann man verschieben, vergrößern und schließen!"
+  toolbutton:
+    label: "Fenster anzeigen"

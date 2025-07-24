@@ -4,3 +4,5 @@ messages:
   window:
     title: "A window"
     content: "I am draggable, resizable and closable!"
+  toolbutton:
+    label: "display window"

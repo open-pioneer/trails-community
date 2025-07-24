@@ -59,7 +59,7 @@ export function AppUI() {
                             )}
                             <MapAnchor position="bottom-right" horizontalGap={10} verticalGap={45}>
                                 <ToolButton
-                                    label="test"
+                                    label={intl.formatMessage({ id: "toolbutton.label" })}
                                     icon={<LuAlignJustify />}
                                     active={!windowClosed}
                                     onClick={() => setWindowClosed(!windowClosed)}
