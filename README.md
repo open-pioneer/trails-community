@@ -7,8 +7,8 @@ This repository contains various Open Pioneer Trails packages developed and prov
 Please note that theses packages are managed by the community and not officially part of the Open Pioneer Trails framework. Therefore, the levels of functionality, testing and maintenance can vary greatly for each individual package.  
 Please try to get in touch with the author of the package if you have any questions about its use or if you are considering making your own adjustments or extensions.
 
-- Samples: [latest](https://open-pioneer.github.io/trails-demo/community/dev/) | [dev](https://open-pioneer.github.io/trails-demo/community/dev/) 
-- API Documentation: [latest](https://open-pioneer.github.io/trails-demo/community/dev/docs/) | [dev](https://open-pioneer.github.io/trails-demo/community/dev/docs/)
+- Samples: [latest](https://open-pioneer.github.io/trails-demo/community/latest/) | [dev](https://open-pioneer.github.io/trails-demo/community/dev/) 
+- API Documentation: [latest](https://open-pioneer.github.io/trails-demo/community/latest/docs/) | [dev](https://open-pioneer.github.io/trails-demo/community/dev/docs/)
 - [User manual](https://github.com/open-pioneer/trails-starter/tree/main/docs)
 
 See [See also](#see-also) for API docs of other trails packages.
