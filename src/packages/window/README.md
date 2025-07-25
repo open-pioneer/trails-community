@@ -1,11 +1,11 @@
 # @open-pioneer-community/window
 
 This package provides windowing system for draggable, resizable and closable UI widgets in Open-Pioneer Trails.
-This package uses [react-rnd](https://github.com/bokuweb/react-rnd) internally
+This package uses [react-rnd](https://github.com/bokuweb/react-rnd) internally.
 
 ## Usage
 
-Wrap a UI widget with the `Window` component to activate the window functionalties.
+Wrap a UI widget with the `Window` component to activate the window functionalities.
 
 ```tsx
 const [windowClosed, setWindowClosed] = useState(false);
@@ -37,4 +37,4 @@ Apache-2.0 (see `LICENSE` file)
 
 ## Author
 
-This work was orignally contributed by [m-elseberg](https://github.com/m-elseberg).
+This work was originally contributed by [m-elseberg](https://github.com/m-elseberg).
