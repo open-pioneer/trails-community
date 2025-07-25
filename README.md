@@ -7,8 +7,8 @@ This repository contains various Open Pioneer Trails packages developed and prov
 Please note that theses packages are managed by the community and not officially part of the Open Pioneer Trails framework. Therefore, the levels of functionality, testing and maintenance can vary greatly for each individual package.  
 Please try to get in touch with the author of the package if you have any questions about its use or if you are considering making your own adjustments or extensions.
 
-- [Samples](https://open-pioneer.github.io/trails-demo/community/dev/)
-- [API Documentation](https://open-pioneer.github.io/trails-demo/community/dev/docs/)
+- Samples: [latest](https://open-pioneer.github.io/trails-demo/community/dev/) | [dev](https://open-pioneer.github.io/trails-demo/community/dev/) 
+- API Documentation: [latest](https://open-pioneer.github.io/trails-demo/community/dev/docs/) | [dev](https://open-pioneer.github.io/trails-demo/community/dev/docs/)
 - [User manual](https://github.com/open-pioneer/trails-starter/tree/main/docs)
 
 See [See also](#see-also) for API docs of other trails packages.
@@ -36,6 +36,27 @@ Point your browser at it and start programming!
 - [OpenLayers base packages](https://github.com/open-pioneer/trails-openlayers-base-packages): Contains packages using OpenLayers to render a map.
 - [Build tools](https://github.com/open-pioneer/trails-build-tools): Contains our build tooling such as the Vite plugin.
 
+## Packages
+
+This repository publishes the following packages:
+
+<!--
+  List packages:
+
+  $ pnpm ls -r --depth -1 --json | jq ".[].name"
+
+  NPM badges: See https://shields.io/badges/npm-version
+-->
+
+| Name                                                                 | Version                                                                                                                                           |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@open-pioneer-community/window](./src/packages/window/)   | [![NPM Version](https://img.shields.io/npm/v/%40open-pioneer-community%2Fwindow)](https://www.npmjs.com/package/@open-pioneer-community/window)   |
+
 ## License
 
 Apache-2.0 (see `LICENSE` file)
+
+## How to contribute
+
+The packages contained in this repository are published using the [Apache 2.0 license](#license). All contributions must therefore be compliant with the same license.  
+Please also read our [contribution guide](https://github.com/open-pioneer/trails-starter/blob/main/docs/Contributing.md).
