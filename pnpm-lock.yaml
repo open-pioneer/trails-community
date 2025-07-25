@@ -171,6 +171,9 @@ catalogs:
     vitest:
       specifier: ^3.2.2
       version: 3.2.2
+    zx:
+      specifier: ^8.7.1
+      version: 8.7.1
 
 overrides:
   semver@<7.5.2: '>=7.5.2'
@@ -326,6 +329,9 @@ importers:
       vitest:
         specifier: 'catalog:'
         version: 3.2.2(@types/node@20.19.0)(happy-dom@17.6.3)(jsdom@26.1.0)(sass@1.89.1)(tsx@4.19.4)(yaml@2.8.0)
+      zx:
+        specifier: 'catalog:'
+        version: 8.7.1
 
   src/packages/window:
     dependencies:
@@ -4159,6 +4165,11 @@ packages:
 
   zstddec@0.1.0:
     resolution: {integrity: sha512-w2NTI8+3l3eeltKAdK8QpiLo/flRAr2p8AGeakfMZOXBxOg9HIu4LVDxBi81sYgVhFhdJjv1OrB5ssI8uFPoLg==}
+
+  zx@8.7.1:
+    resolution: {integrity: sha512-28u1w2LlIfvyvJvYe6pmCipesk8oL5AFMVp+P/U445LcaPgzrU5lNDtAPd6nJvWmoCNyXZz37R/xKOGokccjsw==}
+    engines: {node: '>= 12.17.0'}
+    hasBin: true
 
 snapshots:
 
@@ -8789,3 +8800,5 @@ snapshots:
   zod@3.25.55: {}
 
   zstddec@0.1.0: {}
+
+  zx@8.7.1: {}

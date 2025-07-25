@@ -99,6 +99,7 @@ catalog:
   vite: ^6.3.5
   vite-plugin-eslint: ^1.8.1
   vitest: ^3.2.2
+  zx: ^8.7.1
 
 overrides:
   # https://github.com/advisories/GHSA-c2qf-rxjj-qqgw
