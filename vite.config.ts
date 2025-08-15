@@ -8,12 +8,6 @@ import { resolve } from "node:path";
 import { defineConfig } from "vite";
 import eslint from "vite-plugin-eslint";
 
-// Minimum browser versions supported by generated JS/CSS
-// See also:
-// - https://vitejs.dev/config/build-options.html#build-target
-// - https://esbuild.github.io/api/#target
-const targets = ["chrome92", "edge92", "firefox91", "safari14"];
-
 const sampleSites: string[] = ["samples/window-sample"];
 
 // https://vitejs.dev/config/
@@ -36,7 +30,11 @@ export default defineConfig(({ mode }) => {
         build: {
             outDir: resolve(__dirname, "dist/www"),
             emptyOutDir: true,
-            target: targets
+
+            // Minimum browser versions supported by generated JS/CSS
+            // See also:
+            // - https://vitejs.dev/config/build-options.html#build-target
+            target: "baseline-widely-available"
         },
 
         plugins: [
@@ -53,17 +51,15 @@ export default defineConfig(({ mode }) => {
                 // Apps to distribute as .js files for embedded use cases
                 apps: []
             }),
-            react(),
+            react({ devTarget: "es2024" }),
             eslint()
         ],
 
         // Ignore irrelevant deprecations.
-        // This can be likely be removed with a future version of Vite.
-        // https://github.com/vitejs/vite/issues/18164
         css: {
             preprocessorOptions: {
                 scss: {
-                    silenceDeprecations: ["legacy-js-api", "import"]
+                    silenceDeprecations: ["import"]
                 }
             }
         },
