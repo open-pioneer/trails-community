@@ -30,6 +30,16 @@ const [windowClosed, setWindowClosed] = useState(false);
     );
 }
 ```
+## Dependencies and Compatibility
+
+This package has been tested with the following dependencies:
+
+| Dependency    | Version |
+| -------- | ------- |
+| React  | 19.1.6    |
+| OPT Core Packages | 4.0.0     |
+| @chakra-ui/react    | 3.21.0 |
+| react-rnd    | 10.5.2   |
 
 ## License
 
