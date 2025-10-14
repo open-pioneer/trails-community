@@ -118,8 +118,8 @@ catalogs:
       specifier: ^4.7.8
       version: 4.7.8
     happy-dom:
-      specifier: ^17.6.3
-      version: 17.6.3
+      specifier: ^20.0.0
+      version: 20.0.0
     husky:
       specifier: ^9.1.7
       version: 9.1.7
@@ -287,7 +287,7 @@ importers:
         version: 4.7.8
       happy-dom:
         specifier: 'catalog:'
-        version: 17.6.3
+        version: 20.0.0
       husky:
         specifier: 'catalog:'
         version: 9.1.7
@@ -329,7 +329,7 @@ importers:
         version: 1.8.1(eslint@8.57.1)(vite@7.1.7(@types/node@20.19.0)(sass@1.89.1)(tsx@4.19.4)(yaml@2.8.0))
       vitest:
         specifier: 'catalog:'
-        version: 3.2.4(@types/node@20.19.0)(happy-dom@17.6.3)(jsdom@26.1.0)(sass@1.89.1)(tsx@4.19.4)(yaml@2.8.0)
+        version: 3.2.4(@types/node@20.19.0)(happy-dom@20.0.0)(jsdom@26.1.0)(sass@1.89.1)(tsx@4.19.4)(yaml@2.8.0)
       zx:
         specifier: 'catalog:'
         version: 8.7.1
@@ -1427,6 +1427,9 @@ packages:
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
+
+  '@types/whatwg-mimetype@3.0.2':
+    resolution: {integrity: sha512-c2AKvDT8ToxLIOUlN51gTiHXflsfIFisS4pO7pDPoKouJCESkhZnEy623gwP9laCy5lnLDAw1vAzu2vM2YLOrA==}
 
   '@typescript-eslint/eslint-plugin@8.33.1':
     resolution: {integrity: sha512-TDCXj+YxLgtvxvFlAvpoRv9MAncDLBV2oT9Bd7YBGC/b/sEURoOYuIwLI99rjWOfY3QtDzO+mk0n4AmdFExW8A==}
@@ -2612,8 +2615,8 @@ packages:
     engines: {node: '>=0.4.7'}
     hasBin: true
 
-  happy-dom@17.6.3:
-    resolution: {integrity: sha512-UVIHeVhxmxedbWPCfgS55Jg2rDfwf2BCKeylcPSqazLz5w3Kri7Q4xdBJubsr/+VUzFLh0VjIvh13RaDA2/Xug==}
+  happy-dom@20.0.0:
+    resolution: {integrity: sha512-GkWnwIFxVGCf2raNrxImLo397RdGhLapj5cT3R2PT7FwL62Ze1DROhzmYW7+J3p9105DYMVenEejEbnq5wA37w==}
     engines: {node: '>=20.0.0'}
 
   has-bigints@1.1.0:
@@ -5504,6 +5507,8 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
+  '@types/whatwg-mimetype@3.0.2': {}
+
   '@typescript-eslint/eslint-plugin@8.33.1(@typescript-eslint/parser@8.33.1(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
@@ -7170,9 +7175,10 @@ snapshots:
     optionalDependencies:
       uglify-js: 3.19.3
 
-  happy-dom@17.6.3:
+  happy-dom@20.0.0:
     dependencies:
-      webidl-conversions: 7.0.0
+      '@types/node': 20.19.0
+      '@types/whatwg-mimetype': 3.0.2
       whatwg-mimetype: 3.0.0
 
   has-bigints@1.1.0: {}
@@ -8643,7 +8649,7 @@ snapshots:
     optionalDependencies:
       vite: 7.1.7(@types/node@20.19.0)(sass@1.89.1)(tsx@4.19.4)(yaml@2.8.0)
 
-  vitest@3.2.4(@types/node@20.19.0)(happy-dom@17.6.3)(jsdom@26.1.0)(sass@1.89.1)(tsx@4.19.4)(yaml@2.8.0):
+  vitest@3.2.4(@types/node@20.19.0)(happy-dom@20.0.0)(jsdom@26.1.0)(sass@1.89.1)(tsx@4.19.4)(yaml@2.8.0):
     dependencies:
       '@types/chai': 5.2.2
       '@vitest/expect': 3.2.4
@@ -8670,7 +8676,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 20.19.0
-      happy-dom: 17.6.3
+      happy-dom: 20.0.0
       jsdom: 26.1.0
     transitivePeerDependencies:
       - jiti
