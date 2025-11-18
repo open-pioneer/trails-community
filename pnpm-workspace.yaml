@@ -87,7 +87,7 @@ catalog:
   handlebars: ^4.7.8
   happy-dom: ^20.0.2
   husky: ^9.1.7
-  js-yaml: ^4.1.0
+  js-yaml: ^4.1.1
   jsdom: ^26.1.0
   lint-staged: ^16.1.0
   prettier: ^3.5.3
@@ -129,6 +129,10 @@ overrides:
   "brace-expansion@>=2.0.0 <=2.0.1": "^2.0.2"
   # https://github.com/advisories/GHSA-52f5-9888-hmc6
   "tmp@<=0.2.3": "^0.2.4"
+  # https://github.com/advisories/GHSA-mh29-5h37-fv8m
+  "js-yaml@>=3.x <3.14.2": "^3.14.2"
+  # https://github.com/advisories/GHSA-5j98-mcp5-4vw2
+  "glob@>=10.x <= 11.0.3": "^11.1.0"
 
   # react-rnd uses outdated version of tslib
   "tslib@>=2.0.0 <=2.8.0": "^2.8.1"
