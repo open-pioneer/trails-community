@@ -99,7 +99,7 @@ catalog:
   vite: ^7.1.11
   vite-plugin-eslint: ^1.8.1
   vitest: ^3.2.4
-  zx: ^8.7.1
+  zx: ^8.8.5
 
 overrides:
   # https://github.com/advisories/GHSA-c2qf-rxjj-qqgw
@@ -163,7 +163,7 @@ ignoredBuiltDependencies:
   - core-js
   - unrs-resolver
 
-# Don't automatically link to workspace packages (use e.g. "workspace:^" instead).
+# Don't automatically link to workspace packages (use e.g. "workspace:*" instead).
 linkWorkspacePackages: false
 autoInstallPeers: true
 dedupePeerDependents: true

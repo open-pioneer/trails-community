@@ -12,7 +12,7 @@
         "ol": "catalog:",
         "react": "catalog:",
         "react-icons": "catalog:",
-        "@open-pioneer-community/window": "workspace:^"
+        "@open-pioneer-community/window": "workspace:*"
     },
     "version": "0.0.1"
 }
