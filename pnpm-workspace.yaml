@@ -137,6 +137,9 @@ overrides:
   # react-rnd uses outdated version of tslib
   "tslib@>=2.0.0 <=2.8.0": "^2.8.1"
 
+  # https://github.com/advisories/GHSA-xxjr-mmjv-4gpg
+  "lodash@>=4.0.0 <=4.17.22": "^4.17.23"
+
 auditConfig:
   ignoreCves:
 
