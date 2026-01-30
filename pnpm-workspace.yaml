@@ -142,6 +142,10 @@ overrides:
 
 auditConfig:
   ignoreCves:
+  ignoreGhsas:
+    # Eslint potential stackoverflow
+    # https://github.com/advisories/GHSA-p5wg-g6qr-c7cg
+    - GHSA-p5wg-g6qr-c7cg
 
 allowUnusedPatches: true
 ignorePatchFailures: false
