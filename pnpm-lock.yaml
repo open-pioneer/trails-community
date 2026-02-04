@@ -145,7 +145,7 @@ catalogs:
       specifier: ^5.5.0
       version: 5.5.0
     react-rnd:
-      specifier: 10.5.2
+      specifier: ^10.5.2
       version: 10.5.2
     rimraf:
       specifier: ^6.0.1
