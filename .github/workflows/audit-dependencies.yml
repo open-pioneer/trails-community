@@ -6,13 +6,16 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
+permissions:
+  contents: read
+
 jobs:
   audit-dependencies:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Install
         uses: open-pioneer/trails-repo-automation/.github/actions/install@main
       - name: Audit dependencies
