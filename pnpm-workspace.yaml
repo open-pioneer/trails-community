@@ -93,7 +93,7 @@ catalog:
   rimraf: ^6.0.1
   sass: ^1.89.1
   tsx: ^4.19.4
-  typedoc: ^0.28.5
+  typedoc: ^0.28.17
   typescript: ^5.8.3
   vite: ^7.1.11
   vite-plugin-eslint: ^1.8.1
@@ -109,6 +109,9 @@ overrides:
 
   # https://github.com/advisories/GHSA-52f5-9888-hmc6
   "tmp@<=0.2.3": "^0.2.4"
+
+  # https://github.com/advisories/GHSA-38c4-r59v-3vqw
+  "markdown-it@>=13.0.0 <14.1.1": "^14.1.1"
 
   # react-rnd uses outdated version of tslib
   "tslib@>=2.0.0 <=2.8.0": "^2.8.1"
@@ -134,10 +137,11 @@ minimumReleaseAgeExclude:
 
 auditConfig:
   ignoreCves:
-  ignoreGhsas:
-    # Eslint potential stackoverflow
-    # https://github.com/advisories/GHSA-p5wg-g6qr-c7cg
-    - GHSA-p5wg-g6qr-c7cg
+    # This affects ajv, which is a transitive dependency of eslint.
+    # Eslint depends on ajv@v6, and an update to v8 might not be trivial.
+    # Only dev dependencies are (potentially) affected.
+    # https://github.com/advisories/GHSA-2g4f-4pwh-qvx6
+    - CVE-2025-69873
 
 # Only run build scripts for allowed packages.
 dangerouslyAllowAllBuilds: false
