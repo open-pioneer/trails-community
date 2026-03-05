@@ -123,6 +123,9 @@ overrides:
   "minimatch@>=9.0.0 <9.0.7": "^9.0.9"
   "minimatch@>=10.0.0 <10.2.3": "^10.2.3"
 
+  # https://github.com/advisories/GHSA-wf6x-7x77-mvgw
+  "immutable@>=5.0.0 <5.1.5": "^5.1.5"
+
   # react-rnd uses outdated version of tslib
   "tslib@>=2.0.0 <=2.8.0": "^2.8.1"
 
@@ -143,7 +146,7 @@ minimumReleaseAge: 4320 # 3 days in minutes
 minimumReleaseAgeExclude:
   - "@open-pioneer/*"
   - "@conterra/*"
-  - "minimatch" # TODO: Remove after 2026-03-02
+  - "immutable@5.1.5" # See overrides
 
 auditConfig:
   ignoreCves:
