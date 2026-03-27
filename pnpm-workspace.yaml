@@ -83,7 +83,7 @@ catalog:
   eslint-plugin-react-hooks: ^5.2.0
   eslint-plugin-unused-imports: ^4.1.4
   fast-glob: ^3.3.3
-  handlebars: ^4.7.8
+  handlebars: ^4.7.9
   happy-dom: ^20.0.2
   husky: ^9.1.7
   js-yaml: ^4.1.1
@@ -160,6 +160,7 @@ minimumReleaseAgeExclude:
   - "@open-pioneer/*"
   - "@conterra/*"
   - "picomatch" # See overrides
+  - "handlebars@4.7.9" # https://github.com/advisories/GHSA-2qvq-rjwj-gvw9
 
 peerDependencyRules:
   allowedVersions:

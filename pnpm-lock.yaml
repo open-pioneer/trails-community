@@ -115,8 +115,8 @@ catalogs:
       specifier: ^3.3.3
       version: 3.3.3
     handlebars:
-      specifier: ^4.7.8
-      version: 4.7.8
+      specifier: ^4.7.9
+      version: 4.7.9
     happy-dom:
       specifier: ^20.0.2
       version: 20.0.2
@@ -286,7 +286,7 @@ importers:
         version: 3.3.3
       handlebars:
         specifier: 'catalog:'
-        version: 4.7.8
+        version: 4.7.9
       happy-dom:
         specifier: 'catalog:'
         version: 20.0.2
@@ -2651,8 +2651,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  handlebars@4.7.8:
-    resolution: {integrity: sha512-vafaFqs8MZkRrSX7sFVUdo3ap/eNiLnb4IakshzvP56X5Nr1iGKAIqdX6tMlm6HcNRIkr6AxO5jFEoJzzpT8aQ==}
+  handlebars@4.7.9:
+    resolution: {integrity: sha512-4E71E0rpOaQuJR2A3xDZ+GM1HyWYv1clR58tC8emQNeQe3RH7MAzSbat+V0wG78LQBo6m6bzSG/L4pBuCsgnUQ==}
     engines: {node: '>=0.4.7'}
     hasBin: true
 
@@ -7231,7 +7231,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  handlebars@4.7.8:
+  handlebars@4.7.9:
     dependencies:
       minimist: 1.2.8
       neo-async: 2.6.2
