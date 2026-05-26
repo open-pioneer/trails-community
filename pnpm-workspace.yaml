@@ -151,6 +151,9 @@ overrides:
   # react-rnd uses outdated version of tslib
   "tslib@>=2.0.0 <=2.8.0": "^2.8.1"
 
+  # https://github.com/advisories/GHSA-qjx8-664m-686j
+  "js-cookie@<=3.0.5": "^3.0.7"
+
 allowUnusedPatches: true
 ignorePatchFailures: false
 patchedDependencies:
@@ -168,7 +171,6 @@ minimumReleaseAge: 4320 # 3 days in minutes
 minimumReleaseAgeExclude:
   - "@open-pioneer/*"
   - "@conterra/*"
-  - "vite@7.3.2"
 
 peerDependencyRules:
   allowedVersions:
