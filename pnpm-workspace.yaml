@@ -157,6 +157,9 @@ overrides:
   # https://github.com/advisories/GHSA-jxxr-4gwj-5jf2
   "brace-expansion@>=5.0.0 <5.0.6": "^5.0.6"
 
+  # https://github.com/advisories/GHSA-58qx-3vcg-4xpx
+  "ws@>=8.0.0 <8.20.1": "^8.20.1"
+
 allowUnusedPatches: true
 ignorePatchFailures: false
 patchedDependencies:
