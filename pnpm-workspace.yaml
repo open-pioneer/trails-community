@@ -86,7 +86,7 @@ catalog:
   handlebars: ^4.7.9
   happy-dom: ^20.8.9
   husky: ^9.1.7
-  js-yaml: ^4.1.1
+  js-yaml: ^4.2.0
   jsdom: ^26.1.0
   lint-staged: ^16.1.0
   prettier: ^3.5.3
@@ -95,7 +95,7 @@ catalog:
   tsx: ^4.19.4
   typedoc: ^0.28.17
   typescript: ^5.8.3
-  vite: ^7.3.2
+  vite: ^7.3.5
   vite-plugin-eslint: ^1.8.1
   vitest: ^3.2.6
   zx: ^8.8.5
@@ -160,6 +160,18 @@ overrides:
   # https://github.com/advisories/GHSA-58qx-3vcg-4xpx
   "ws@>=8.0.0 <8.20.1": "^8.20.1"
 
+  # https://github.com/advisories/GHSA-22p9-wv53-3rq4
+  "linkify-it@<=5.0.0": "^5.0.1"
+
+  # https://github.com/advisories/GHSA-g7r4-m6w7-qqqr
+  "esbuild@>=0.27.3 <0.28.1": "^0.28.1"
+
+  # https://github.com/advisories/GHSA-6v5v-wf23-fmfq
+  "markdown-it@<=14.1.1": "^14.2.0"
+
+  # https://github.com/advisories/GHSA-h67p-54hq-rp68
+  "js-yaml@<=4.1.1": "^4.2.0"
+
 allowUnusedPatches: true
 ignorePatchFailures: false
 patchedDependencies:
@@ -183,6 +195,7 @@ peerDependencyRules:
     # See overrides
     "fdir>picomatch": "*"
     "rollup": "*"
+    "rollup-plugin-esbuild>esbuild": "*"
 
 auditConfig:
   ignoreCves:
