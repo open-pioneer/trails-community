@@ -169,9 +169,6 @@ overrides:
   # https://github.com/advisories/GHSA-6v5v-wf23-fmfq
   "markdown-it@<=14.1.1": "^14.2.0"
 
-  # https://github.com/advisories/GHSA-h67p-54hq-rp68
-  "js-yaml@<=4.1.1": "^4.2.0"
-
 allowUnusedPatches: true
 ignorePatchFailures: false
 patchedDependencies:
@@ -210,6 +207,10 @@ auditConfig:
 
     # https://github.com/advisories/GHSA-f886-m6hf-6m8v
     - CVE-2026-33750
+
+  ignoreGhsas:
+    # https://github.com/advisories/GHSA-h67p-54hq-rp68
+    - GHSA-h67p-54hq-rp68
 
 # Only run build scripts for allowed packages.
 dangerouslyAllowAllBuilds: false
