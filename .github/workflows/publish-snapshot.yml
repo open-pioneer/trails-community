@@ -23,6 +23,8 @@ jobs:
 
       - name: Install
         uses: open-pioneer/trails-repo-automation/.github/actions/install@main
+        with:
+          npm-auth: "true" # publishes to npm
 
       - name: "Publish packages"
         uses: open-pioneer/trails-repo-automation/.github/actions/publish-snapshots@main
