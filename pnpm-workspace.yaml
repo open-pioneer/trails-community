@@ -213,6 +213,9 @@ peerDependencyRules:
     "rollup": "*"
     "rollup-plugin-esbuild>esbuild": "*"
 
+audit:
+  level: "moderate"
+
 auditConfig:
   ignoreCves:
     # This affects ajv, which is a transitive dependency of eslint.
