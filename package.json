@@ -2,8 +2,8 @@
     "name": "trails-community",
     "version": "0.0.1",
     "private": true,
-    "type": "module",
     "license": "Apache-2.0",
+    "type": "module",
     "scripts": {
         "clean": "rimraf dist && pnpm recursive exec rimraf dist",
         "dev": "vite",
@@ -75,5 +75,5 @@
         "node": ">= 20",
         "pnpm": ">= 10"
     },
-    "packageManager": "pnpm@10.11.1"
+    "packageManager": "pnpm@12.4.2"
 }
