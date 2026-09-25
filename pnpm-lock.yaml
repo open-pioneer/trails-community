@@ -534,6 +534,33 @@ importers:
     linkDirectory: false
     publishDirectory: dist
 
+  src/packages/window/processclient:
+    dependencies:
+      '@chakra-ui/react':
+        specifier: 'catalog:'
+        version: 3.21.0(@emotion/react@11.14.0(@types/react@19.1.6)(react@19.1.0)(supports-color@7.2.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@open-pioneer/local-storage':
+        specifier: 'catalog:'
+        version: 4.0.0(@types/react@19.1.6)(supports-color@7.2.0)(typescript@5.8.3)
+      '@open-pioneer/runtime':
+        specifier: 'catalog:'
+        version: 4.0.0(@types/react@19.1.6)(supports-color@7.2.0)(typescript@5.8.3)
+      react:
+        specifier: 'catalog:'
+        version: 19.1.0
+      react-icons:
+        specifier: 'catalog:'
+        version: 5.5.0(react@19.1.0)
+      react-rnd:
+        specifier: 'catalog:'
+        version: 10.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+    devDependencies:
+      '@open-pioneer/test-utils':
+        specifier: 'catalog:'
+        version: 4.0.0(@types/react-dom@19.1.6(@types/react@19.1.6))(@types/react@19.1.6)(supports-color@7.2.0)(typescript@5.8.3)
+    linkDirectory: false
+    publishDirectory: dist
+
   src/samples/window-sample/window-app:
     dependencies:
       '@chakra-ui/react':
