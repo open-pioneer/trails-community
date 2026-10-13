@@ -13,7 +13,7 @@
         "build": "vite build",
         "build-packages": "pnpm run -r --aggregate-output build",
         "build-docs": "typedoc",
-        "build-license-report": "tsx ./support/create-license-report.ts ",
+        "build-license-report": "create-license-report -c support/license-config.yaml",
         "preview": "vite preview",
         "lint": "eslint ./src ./support --ext .js,.ts,.jsx,.tsx,.mjs,.mts,.cjs,.cts",
         "eslint": "pnpm run lint",
@@ -31,6 +31,7 @@
         "@open-pioneer/build-package-cli": "catalog:",
         "@open-pioneer/build-support": "catalog:",
         "@open-pioneer/check-pnpm-duplicates": "catalog:",
+        "@open-pioneer/create-license-report": "catalog:",
         "@open-pioneer/vite-plugin-pioneer": "catalog:",
         "@testing-library/dom": "catalog:",
         "@testing-library/jest-dom": "catalog:",
@@ -53,7 +54,6 @@
         "eslint-plugin-react-hooks": "catalog:",
         "eslint-plugin-unused-imports": "catalog:",
         "fast-glob": "catalog:",
-        "handlebars": "catalog:",
         "happy-dom": "catalog:",
         "husky": "catalog:",
         "js-yaml": "catalog:",
@@ -75,5 +75,5 @@
         "node": ">= 20",
         "pnpm": ">= 10"
     },
-    "packageManager": "pnpm@12.4.2"
+    "packageManager": "pnpm@12.11.2"
 }
