@@ -15,7 +15,7 @@
         "build-docs": "typedoc",
         "build-license-report": "create-license-report -c support/license-config.yaml",
         "preview": "vite preview",
-        "lint": "eslint ./src ./support --ext .js,.ts,.jsx,.tsx,.mjs,.mts,.cjs,.cts",
+        "lint": "eslint ./src --ext .js,.ts,.jsx,.tsx,.mjs,.mts,.cjs,.cts",
         "eslint": "pnpm run lint",
         "prettier-check": "pnpm prettier:common -c",
         "prettier": "pnpm prettier:common -w",
