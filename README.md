@@ -7,7 +7,7 @@ This repository contains various Open Pioneer Trails packages developed and prov
 Please note that theses packages are managed by the community and not officially part of the Open Pioneer Trails framework. Therefore, the levels of functionality, testing and maintenance can vary greatly for each individual package.  
 Please try to get in touch with the author of the package if you have any questions about its use or if you are considering making your own adjustments or extensions.
 
-- Samples: [latest](https://open-pioneer.github.io/trails-demo/community/latest/) | [dev](https://open-pioneer.github.io/trails-demo/community/dev/) 
+- Samples: [latest](https://open-pioneer.github.io/trails-demo/community/latest/) | [dev](https://open-pioneer.github.io/trails-demo/community/dev/)
 - API Documentation: [latest](https://open-pioneer.github.io/trails-demo/community/latest/docs/) | [dev](https://open-pioneer.github.io/trails-demo/community/dev/docs/)
 - [User manual](https://github.com/open-pioneer/trails-starter/tree/main/docs)
 
@@ -48,9 +48,10 @@ This repository publishes the following packages:
   NPM badges: See https://shields.io/badges/npm-version
 -->
 
-| Name                                                                 | Version                                                                                                                                           |
-| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [@open-pioneer-community/window](./src/packages/window/)   | [![NPM Version](https://img.shields.io/npm/v/%40open-pioneer-community%2Fwindow)](https://www.npmjs.com/package/@open-pioneer-community/window)   |
+| Name                                                                                          | Version                                                                                                                                         |
+| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@open-pioneer-community/window](./src/packages/window/)                                      | [![NPM Version](https://img.shields.io/npm/v/%40open-pioneer-community%2Fwindow)](https://www.npmjs.com/package/@open-pioneer-community/window) |
+| [@open-pioneer-community/ogc-api-processes-client/](./src/packages/ogc-api-processes-client/) |                                                                                                                                                 |
 
 ## License
 
