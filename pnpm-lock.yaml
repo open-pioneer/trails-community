@@ -478,11 +478,11 @@ importers:
   src/packages/ogc-api-processes-client:
     dependencies:
       '@open-pioneer/runtime':
-        specifier: 'catalog:'
+        specifier: 4.0.0
         version: 4.0.0(@types/react@19.1.6)(supports-color@7.2.0)(typescript@5.8.3)
     devDependencies:
       '@open-pioneer/test-utils':
-        specifier: 'catalog:'
+        specifier: 4.0.0
         version: 4.0.0(@types/react-dom@19.1.6(@types/react@19.1.6))(@types/react@19.1.6)(supports-color@7.2.0)(typescript@5.8.3)
     linkDirectory: false
     publishDirectory: dist
