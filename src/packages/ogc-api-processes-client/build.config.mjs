@@ -4,13 +4,13 @@
 import { defineBuildConfig } from "@open-pioneer/build-support";
 
 export default defineBuildConfig({
-    i18n: ["en"],
+    entryPoints: ["index"],
     publishConfig: {
         strict: true
     },
     services: {
         ApiServiceImpl: {
-            provides: ["app.ApiService"],
+            provides: ["ogcapiprocessclient.OGCAPIProcessesService"]
         }
     }
 });

@@ -1,27 +1,25 @@
 {
-    "name": "@open-pioneer-community/processclient",
+    "name": "@open-pioneer-community/ogc-api-processes-client",
     "version": "0.1.0",
     "main": "index.ts",
     "license": "Apache-2.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/open-pioneer/trails-community",
-        "directory": "src/packages/processclient"
+        "directory": "src/packages/ogc-api-processes-client"
     },
     "homepage": "https://github.com/open-pioneer",
     "keywords": [
-        "open-pioneer-trails"
+        "open-pioneer-trails",
+        "ogc api",
+        "ogc api - processes",
+        "web processing"
     ],
     "scripts": {
         "build": "build-pioneer-package"
     },
     "dependencies": {
-        "@open-pioneer/runtime": "catalog:",
-        "@open-pioneer/local-storage": "catalog:",
-        "@chakra-ui/react": "catalog:",
-        "react": "catalog:",
-        "react-rnd": "catalog:",
-        "react-icons": "catalog:"
+        "@open-pioneer/runtime": "catalog:"
     },
     "devDependencies": {
         "@open-pioneer/test-utils": "catalog:"
