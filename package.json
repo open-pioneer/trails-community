@@ -59,6 +59,7 @@
         "js-yaml": "catalog:",
         "jsdom": "catalog:",
         "lint-staged": "catalog:",
+        "playwright": "catalog:",
         "prettier": "catalog:",
         "react": "catalog:",
         "rimraf": "catalog:",
