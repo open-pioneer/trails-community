@@ -159,6 +159,9 @@ auditConfig:
     - GHSA-vfj7-8cjw-p6xm
     # CVE-2026-97058: sprintf-js; only used for changesets.
     - GHSA-hp3w-g68c-fv3c
+    # minimatch globparts amplification: only typedoc (dev tool), pinned to minimatch 9 via override.
+    # Glob patterns come exclusively from repository config. Remove once typedoc supports minimatch >= 11.
+    - GHSA-g3hv-75wg-m249
 
 allowBuilds:
   "@parcel/watcher": true
