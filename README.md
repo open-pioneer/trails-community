@@ -1,4 +1,4 @@
-[![Build and deploy](https://github.com/open-pioneer/trails-community/actions/workflows/ci.yml/badge.svg)](https://github.com/open-pioneer/trails-community/actions/workflows/ci.yml) [![Audit dependencies (daily)](https://github.com/open-pioneer/trails-community/actions/workflows/audit-dependencies.yml/badge.svg)](https://github.com/open-pioneer/trails-community/actions/workflows/audit-dependencies.yml)
+[![Build and deploy](https://github.com/open-pioneer/trails-community/actions/workflows/ci.yml/badge.svg)](https://github.com/open-pioneer/trails-community/actions/workflows/ci.yml)
 
 # Open Pioneer Trails - Community Packages
 
