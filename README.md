@@ -4,7 +4,10 @@
 
 This repository contains various Open Pioneer Trails packages developed and provided by the Trails community.
 
-Please note that theses packages are managed by the community and not officially part of the Open Pioneer Trails framework. Therefore, the levels of functionality, testing and maintenance can vary greatly for each individual package.  
+Please note that theses packages are managed by the community and not officially part of the Open Pioneer Trails framework. Therefore, the levels of functionality, testing and maintenance can vary greatly for each individual package.
+
+**No automated or regular vulnerability scan has been set up for these packages. Please scan for CVEs and  vulnerabilities before using these packages.**
+
 Please try to get in touch with the author of the package if you have any questions about its use or if you are considering making your own adjustments or extensions.
 
 - Samples: [latest](https://open-pioneer.github.io/trails-demo/community/latest/) | [dev](https://open-pioneer.github.io/trails-demo/community/dev/)
